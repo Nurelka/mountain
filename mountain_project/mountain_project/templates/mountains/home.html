@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mountains</title>
+</head>
+<body>
+    <h1>List of Mountains</h1>
+    <ul>
+    {% for mountain in mountains %}
+        <li>{{ mountain.name }} - {{ mountain.location }} - {{ mountain.height }} m</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
